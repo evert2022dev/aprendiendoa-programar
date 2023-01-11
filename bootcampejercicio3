@@ -1,0 +1,40 @@
+public class Coche {
+    private int numPuertas;
+
+    public Coche(int numPuertas) {
+        this.numPuertas = numPuertas;
+    }
+
+    public void incrementarPuertas() {
+        ++this.numPuertas;
+    }
+
+    public int getNumPuertas() {
+        return this.numPuertas;
+    }
+
+    public static void main(String[] args) {
+        Coche miCoche = new Coche(4);
+        miCoche.incrementarPuertas();
+        System.out.println("El coche tiene " + miCoche.getNumPuertas() + " puertas.");
+    }
+}
+
+
+
+
+// sumar tres numeros 
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        int resultado = suma(2, 4, 5);
+        System.out.println(resultado);
+    }
+
+    public static int suma(int a, int b, int c) {
+        return a + b + c;
+    }
+}
