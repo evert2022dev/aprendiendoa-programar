@@ -33,7 +33,7 @@ ejercicio 2
 
   class biclewhile{
     public static void main(String[] args){
-
+             
         int numerowhile =0;
         while (numerowhile <3){
 
@@ -41,8 +41,6 @@ ejercicio 2
             numerowhile = numerowhile +1;
             System.out.println("valor de numero while:" + numerowhile);
         }
-
-
 
     }
 
@@ -65,8 +63,26 @@ ejercicio 2
             System.out.println("valor de numero while:" + numerowhile);
         }while (numerowhile <3);
 
+    }
 
+}
+
+
+
+//Para el bucle For, crea una variable numeroFor, esta variable tendrá como valor 0 y su condición 
+será que la variable sea igual o menor que 3, se irá incrementando
+en 1 su valor cada vez que se ejecute y deberá mostrarse por pantalla.
+
+
+public class bucle_for {
+    public static void main(String[] args){
+
+        for (int numeroFor = 0; numeroFor <=3; numeroFor = numeroFor +1){
+            System.out.println("el numero es " +numeroFor);
+        }
 
     }
+
+
 
 }
