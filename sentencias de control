@@ -1,1 +1,72 @@
-hola
+//ejercicio 1
+//Usando un if, crear una condición que compare si la variable numeroIf es positivo, negativo, o 0.
+//Pista: Los números inferiores a 0 son negativos y los superiores, positivos.
+public class ejercicio4 {
+
+    private static void main(String[] args) {
+        int numeroIf = 0;
+        if (numeroIf > 0)
+            System.out.println("el numero es positivo");
+
+        else if (numeroIf < 0) {
+            System.out.println("el numero es negativo");
+        }
+        else if (numeroIf == 0) {
+            System.out.println("el numero es cero");
+
+        }
+
+    }
+    
+}
+
+
+ejercicio 2
+
+
+//Crea un bucle While, este bucle tendrá que tener como condición que la variable numeroWhile
+// sea inferior a 3, el bloque de código que tendrá el bucle deberá:
+
+//Incrementar el valor de la variable en uno cada vez que se ejecute.
+
+//Mostrarlo por pantalla cada vez que se ejecute.
+
+  class biclewhile{
+    public static void main(String[] args){
+
+        int numerowhile =0;
+        while (numerowhile <3){
+
+
+            numerowhile = numerowhile +1;
+            System.out.println("valor de numero while:" + numerowhile);
+        }
+
+
+
+    }
+
+}
+
+
+
+
+
+
+//Para el bucle Do While, deberás crear la misma estructura que en el While,
+// pero solo se debe ejecutar una vez.
+
+  class biclewhile{
+    public static void main(String[] args){
+
+        int numerowhile =0;
+        do {
+            numerowhile = numerowhile +1;
+            System.out.println("valor de numero while:" + numerowhile);
+        }while (numerowhile <3);
+
+
+
+    }
+
+}
