@@ -1,0 +1,69 @@
+public class Main {
+    public static void main(String[] args) {
+        cliente cliente = new cliente();
+        trabajador trabajador = new trabajador();
+        cliente.setNombre("evert");
+        cliente.setEdad(56);
+        cliente.setTelefono(1234567890);
+        cliente.setCredito(230.456);
+        System.out.println("Soy " + cliente.getNombre() + ", tengo " + cliente.getEdad() + " años y mi telefono es " + cliente.getTelefono()
+                + " y mi credito disponible es " + cliente.getCredito() + "€");
+
+        trabajador.setNombre( "carlos");
+        trabajador.setEdad(47);
+        trabajador.setTelefono(1098765432);
+        trabajador.setSalario(234.06);
+        System.out.println("Soy " + trabajador.getNombre() + ", tengo " + trabajador.getEdad() + " años y mi telefono es " + trabajador.getTelefono()
+                + " y mi salario es de " + trabajador.getSalario() + "€");
+    }
+
+
+
+}
+class persona{
+    int edad;
+    String nombre;
+    long telefono;
+    public void setEdad(int edad){
+        this.edad= edad;
+    }
+    public int getEdad(){
+        return this.edad;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public long getTelefono() {
+        return this.telefono;
+    }
+}
+class cliente extends persona{
+    double credito;
+
+    public void setCredito(double credito) {
+        this.credito = credito;
+    }
+
+    public double getCredito() {
+        return this.credito;
+    }
+}
+class trabajador extends persona{
+    double salario;
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public double getSalario() {
+        return this.salario;
+    }
+}
